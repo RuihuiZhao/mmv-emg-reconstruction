@@ -1,0 +1,12 @@
+Validation date: 2026-11-05 (Asia/Shanghai)
+Runtime: MATLAB R2025b, Windows
+Command: run('examples/demo_joint_sparse.m')
+Status: PASS (actual MATLAB execution)
+Shared support assertion: PASS
+Relative Frobenius error < 1e-8: PASS
+Mean PRD: 3.76e-14 percent
+Joint OMP time in this run: 0.0327 seconds
+Independent OMP time in this run: 0.0115643 seconds
+Timing is environment-dependent; this is not a paper benchmark.
+The independent OMP baseline was executed using the same measurements and atom budget.
+Paper experiments and original participant data: NOT reproduced.
