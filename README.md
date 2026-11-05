@@ -12,13 +12,13 @@ Multichannel sEMG recordings create substantial storage and transmission demands
 
 The paper studies preprocessing, the discrete sine transform (DST) sparse basis, a custom BPBDMtx measurement matrix, and MMV orthogonal matching pursuit. It evaluates reconstruction SNR, error, energy recovery, sampling ratio, and reconstruction time on high-density mandibular sEMG and conventional leg-muscle recordings.
 
-## What this repository contains
+## Repository structure
 
 | Path | Purpose |
 | --- | --- |
 | `src/` | Maintained joint OMP solver and explicitly defined metrics |
 | `examples/` | Seeded synthetic demonstration with an independent OMP baseline |
-| `legacy/` | Historical MATLAB scripts from three experiment folders; local input paths redacted |
+| `legacy/` | Historical code grouped into algorithms, measurement matrices, transforms, and experiment drafts; duplicates merged |
 | `docs/` | Method, provenance, reproduction limits, and contribution statement |
 | `data/` | Instructions for locally supplied recordings; no participant data |
 | `paper/` | Publication reference and access information |
