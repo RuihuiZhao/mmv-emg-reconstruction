@@ -18,3 +18,5 @@ Alternate historical filenames use an _alternate suffix where needed. Before run
 The original Code1/CS_OMP.m variant and the OMP_MMV0.m draft were removed from the distributed file set at the maintainer's request. CS_OMP.m now refers to the retained implementation originally stored in Code/CS_OMP.m. Original files remain in the local source collection and earlier Git commits. The provenance CSV lists the currently distributed variants.
 
 The maintainer also removed the historical K/M parameter-sweep scripts, reconstruction test draft, Channel_error.m, and Diaoyong.m from the experiments folder. Earlier Git commits retain their history.
+
+MMV.m, MMVtest.m, and MMVtestnewmat1.m were subsequently removed at the maintainer's request. The experiments folder retains MMVnew.m, MMVtest1.m, OMPtest.m, SMV.m, and run_CS_OMP.m.
