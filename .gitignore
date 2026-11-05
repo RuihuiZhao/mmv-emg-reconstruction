@@ -1,0 +1,13 @@
+# Raw participant data and downloaded datasets stay local.
+data/*
+!data/README.md
+*.asv
+*.autosave
+.DS_Store
+Thumbs.db
+*.mat
+*.zip
+results/*
+!results/README.md
+!results/demo_reconstruction.png
+!results/validation.txt

@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "Please cite the ROBIO 2024 paper when referring to this research."
+title: "MMV based EMG Signal Reconstruction for Remote Rehabilitation"
+type: software
+authors:
+  - family-names: Zhao
+    given-names: Ruihui
+  - family-names: Zhang
+    given-names: Haoxiang
+  - family-names: Ma
+    given-names: Yehao
+preferred-citation:
+  type: conference-paper
+  title: "MMV based EMG Signal Reconstruction for Remote Rehabilitation"
+  authors:
+    - family-names: Zhao
+      given-names: Ruihui
+    - family-names: Zhang
+      given-names: Haoxiang
+    - family-names: Ma
+      given-names: Yehao
+  year: 2024
+  collection-title: "2024 IEEE International Conference on Robotics and Biomimetics (ROBIO)"
+  start: 1567
+  end: 1572
+  doi: "10.1109/ROBIO64047.2024.10907304"
