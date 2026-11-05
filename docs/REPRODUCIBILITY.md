@@ -11,7 +11,7 @@ Do not add every legacy folder recursively to the MATLAB path: duplicate functio
 
 The paper describes taking the first 3500 samples, third-order Butterworth band-pass filtering with normalized cutoffs `[0.005,0.45]`, removing the mean, and resampling to 5000 samples. It uses DST and BPBDMtx and studies the sampling ratio `M/N`. Do not interpret these normalized cutoffs as Hz without the sampling frequency. Signal Processing Toolbox is required for `butter`, `filtfilt`, and `resample`; some optional legacy transforms also need Wavelet Toolbox.
 
-The paper and scripts contain varying atom/iteration budgets (including 800 and 1000). `legacy/measurement_matrices/Code2_BPBDMtx.m` uses adjacent-pair binary summation and does not use its local `k=N/M` variable. For `M<N/2`, its loop only covers the first `2*M` input columns; for `M>N/2`, rows are repeated. Do not silently replace this with a random or block-diagonal matrix and call it the same experiment.
+The paper and scripts contain varying atom/iteration budgets (including 800 and 1000). `legacy/measurement_matrices/BPBDMtx.m` uses adjacent-pair binary summation and does not use its local `k=N/M` variable. For `M<N/2`, its loop only covers the first `2*M` input columns; for `M>N/2`, rows are repeated. Do not silently replace this with a random or block-diagonal matrix and call it the same experiment.
 
 ## Known obstacles to exact replication
 
