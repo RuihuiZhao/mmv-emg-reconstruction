@@ -12,30 +12,6 @@ Multichannel sEMG recordings create substantial storage and transmission demands
 
 The paper studies preprocessing, the discrete sine transform (DST) sparse basis, a custom BPBDMtx measurement matrix, and MMV orthogonal matching pursuit. It evaluates reconstruction SNR, error, energy recovery, sampling ratio, and reconstruction time on high-density mandibular sEMG and conventional leg-muscle recordings.
 
-## Repository structure
-
-| Path | Purpose |
-| --- | --- |
-| `src/` | Maintained joint OMP solver and explicitly defined metrics |
-| `examples/` | Seeded synthetic demonstration with an independent OMP baseline |
-| `legacy/` | Historical code grouped into algorithms, measurement matrices, transforms, and experiment drafts; duplicates merged |
-| `docs/` | Method, provenance, reproduction limits, and contribution statement |
-| `data/` | Instructions for locally supplied recordings; no participant data |
-| `paper/` | Publication reference and access information |
-| `results/` | Demonstration output and validation status |
-
-## Quick start
-
-Requires MATLAB. The synthetic example uses base MATLAB functionality and does not require the original recordings. From the repository root:
-
-```matlab
-run('examples/demo_joint_sparse.m')
-```
-
-The script fixes the random seed to 42, constructs four signals with eight shared DST coefficients, takes 128 measurements of each 256-sample signal, and compares joint OMP with independent OMP using identical measurements and atom budgets. It asserts recovery of the shared support and relative reconstruction error below `1e-8`, saves metrics, and saves the numerical metrics.
-
-**This is a small synthetic algorithm check, not an sEMG experiment or a replication of the paper's reported results.** Its Gaussian measurement matrix differs from the paper's BPBDMtx setting. The maintained solver also changes numerical solution and stopping behavior; see the reproduction guide.
-
 ## Figures and experimental results from the paper
 
 All figures below are extracted directly from the supplied paper PDF. They retain the original subpanels and data; they are published results, not newly reproduced experiments. [Detailed bilingual figure guide and source notes](paper/FIGURES.md).
@@ -75,6 +51,30 @@ The left panel reports MMV reconstruction time and the right panel SMV reconstru
 ![Table 1. Two-channel reconstruction results](paper/figures/table01-two-channel-results.png)
 
 The table contains eight recording rows: four labeled Normal people look up and four labeled Patient look up. The caption refers to head-tilting and jaw opening/closing movements. The text states that two adjacent channels are selected. It reports SNR, an error column labeled MSE/%, ERP, and time for MMV and SMV. MMV SNR is 20.33-20.86 dB versus 16.83-16.94 dB for SMV; MMV time is 32.1471-33.0800 s versus 41.1888-41.8728 s for SMV. ERP is 99.07-99.19% versus 97.94-97.99%. The error columns are reproduced exactly and are not presented as directly comparable, because the supplied scripts use different error formulas. Eight rows do not establish eight unique participants.
+
+## Repository structure
+
+| Path | Purpose |
+| --- | --- |
+| `src/` | Maintained joint OMP solver and explicitly defined metrics |
+| `examples/` | Seeded synthetic demonstration with an independent OMP baseline |
+| `legacy/` | Historical code grouped into algorithms, measurement matrices, transforms, and experiment drafts; duplicates merged |
+| `docs/` | Method, provenance, reproduction limits, and contribution statement |
+| `data/` | Instructions for locally supplied recordings; no participant data |
+| `paper/` | Publication reference and access information |
+| `results/` | Demonstration output and validation status |
+
+## Quick start
+
+Requires MATLAB. The synthetic example uses base MATLAB functionality and does not require the original recordings. From the repository root:
+
+```matlab
+run('examples/demo_joint_sparse.m')
+```
+
+The script fixes the random seed to 42, constructs four signals with eight shared DST coefficients, takes 128 measurements of each 256-sample signal, and compares joint OMP with independent OMP using identical measurements and atom budgets. It asserts recovery of the shared support and relative reconstruction error below `1e-8`, and saves the numerical metrics.
+
+**This is a small synthetic algorithm check, not an sEMG experiment or a replication of the paper's reported results.** Its Gaussian measurement matrix differs from the paper's BPBDMtx setting. The maintained solver also changes numerical solution and stopping behavior; see the reproduction guide.
 
 ## Author contribution
 
