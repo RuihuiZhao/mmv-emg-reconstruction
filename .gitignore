@@ -9,5 +9,4 @@ Thumbs.db
 *.zip
 results/*
 !results/README.md
-!results/demo_reconstruction.png
 !results/validation.txt
