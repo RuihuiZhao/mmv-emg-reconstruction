@@ -1,0 +1,97 @@
+{
+  "source_pdf": "MMV based EMG Signal Reconstruction for Remote Rehabilitation.pdf",
+  "source_sha256": "231c9b41e26c0276a63e6ef3388d2dba4b22c920f08d2be85563d074d2cfc757",
+  "doi": "10.1109/ROBIO64047.2024.10907304",
+  "figures": [
+    {
+      "file": "fig01-electrode-placement.png",
+      "label": "Figure 1",
+      "pdf_page": 3,
+      "printed_page": 1569,
+      "crop_pixels_on_render": [
+        1019,
+        1369,
+        1658,
+        1708
+      ],
+      "render_scale": 3,
+      "sha256": "95d7b3792e8814f7baa04dfcba71d395d644b6ac0c087e5fc8fcb531a8f64cdb",
+      "modifications": "Rectangular crop only; no data redrawn, no enhancement or anonymization."
+    },
+    {
+      "file": "fig02-single-channel-emg.png",
+      "label": "Figure 2",
+      "pdf_page": 4,
+      "printed_page": 1570,
+      "crop_pixels_on_render": [
+        201,
+        358,
+        919,
+        733
+      ],
+      "render_scale": 3,
+      "sha256": "b389066a633edc7d1d37809baa408b6a3978d2d8856b7ea175f53d74ef01c86b",
+      "modifications": "Rectangular crop only; no data redrawn, no enhancement or anonymization."
+    },
+    {
+      "file": "fig03-iteration-tradeoff.png",
+      "label": "Figure 3",
+      "pdf_page": 4,
+      "printed_page": 1570,
+      "crop_pixels_on_render": [
+        165,
+        1446,
+        895,
+        1776
+      ],
+      "render_scale": 3,
+      "sha256": "4a0fbff5cfcabbb8609f2f890c2443c2cfe0561ab99931a3febcd3094eb2f2c1",
+      "modifications": "Rectangular crop only; no data redrawn, no enhancement or anonymization."
+    },
+    {
+      "file": "fig04-sampling-ratio-quality.png",
+      "label": "Figure 4",
+      "pdf_page": 4,
+      "printed_page": 1570,
+      "crop_pixels_on_render": [
+        951,
+        300,
+        1777,
+        707
+      ],
+      "render_scale": 3,
+      "sha256": "5db5973493da0a7328f63905530b0c5f00892b2b7b842ed5213e460de6a0ea34",
+      "modifications": "Rectangular crop only; no data redrawn, no enhancement or anonymization."
+    },
+    {
+      "file": "fig05-sampling-ratio-time.png",
+      "label": "Figure 5",
+      "pdf_page": 4,
+      "printed_page": 1570,
+      "crop_pixels_on_render": [
+        940,
+        1078,
+        1777,
+        1472
+      ],
+      "render_scale": 3,
+      "sha256": "c0195382575bc378c01c7face3e1d606acb487ae4aecf48577b646f970365937",
+      "modifications": "Rectangular crop only; no data redrawn, no enhancement or anonymization."
+    },
+    {
+      "file": "table01-two-channel-results.png",
+      "label": "Table 1",
+      "pdf_page": 5,
+      "printed_page": 1571,
+      "crop_pixels_on_render": [
+        227,
+        418,
+        1621,
+        1157
+      ],
+      "render_scale": 3,
+      "sha256": "df5f5807bd9b5d1da30f268bcf1a1e6a70a91058d1f3b5c1770d86783c46402f",
+      "modifications": "Rectangular crop only; no data redrawn, no enhancement or anonymization."
+    }
+  ]
+}
