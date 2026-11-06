@@ -31,13 +31,5 @@ output = fullfile(root,'results');
 if ~exist(output,'dir'), mkdir(output); end
 save(fullfile(output,'demo_results.mat'),'metrics','independentMetrics', ...
     'elapsedSeconds','independentSeconds','N','M','K','channels','support');
-f = figure('Visible','off');
-plot(reference(:,1),'LineWidth',1); hold on;
-plot(reconstructed(:,1),'--','LineWidth',1);
-xlabel('Sample'); ylabel('Amplitude (arbitrary units)');
-title('Synthetic shared-support example: channel 1');
-legend('Reference','MMV reconstruction');
-exportgraphics(f,fullfile(output,'demo_reconstruction.png'),'Resolution',160);
-close(f);
 fprintf('Synthetic demo passed. Mean PRD: %.3g%%; MMV solver: %.4fs\n', ...
     mean(metrics.prd_percent),elapsedSeconds);
